@@ -55,7 +55,16 @@ module.exports = {
             "styled-jsx/babel"
           ]
         }
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {},
+          },
+        ],
+      },
     ]
   },
 

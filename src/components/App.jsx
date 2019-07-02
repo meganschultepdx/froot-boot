@@ -1,12 +1,21 @@
 import React from 'react';
 import Header from './Header';
-import Body from './Body';
+import Home from './Home';
+import fruittrunk from '../assets/img/fruittrunk.jpg';
 
 function App(){
   return (
     <div>
+      <style jsx global>{`
+        body {
+          background-image: url(${fruittrunk});
+          background-size: cover;
+          background-repeat: repeat;
+        }
+        `}</style>
       <Header/>
-      <Body/>
+      <Home/>
+
     </div>
   );
 }
